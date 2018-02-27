@@ -1,0 +1,21 @@
+% graphics path
+\graphicspath{{src/img/}}
+
+
+% verbatim setup
+\newcommand{\verbatimFont}{
+\fontsize{10pt}{12pt}\selectfont
+\baselineskip=1em
+}
+
+
+% workaround for regression in babel package on linux
+\providecommand{\No}{\textnumero}
+
+
+% remove vertical space from lists
+\renewcommand{\alph}[1]{\asbuk{#1}} % костыль для кирилической нумерации вместо латинской
+\setlist{nolistsep} % убираем дополнительные вертикальные отступы вокруг списков
+\setenumerate[1]{label=\alph*), fullwidth, itemindent=\parindent,  listparindent=\parindent}
+\setenumerate[2]{label=\arabic*), fullwidth, itemindent=\parindent, listparindent=\parindent, leftmargin=\parindent}
+\setitemize{fullwidth, itemindent=\parindent, listparindent=\parindent}

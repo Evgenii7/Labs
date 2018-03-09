@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="567.028" Width="770.128">
+    <Grid Margin="-36,0,-8,-21">
+        <Grid.RowDefinitions>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+
+
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="texb" HorizontalAlignment="Stretch" Height="44" Margin="74,10,221,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" IsEnabled="False"/>
+        <Button x:Name="two" Content="2" Margin="331,176,359,0" VerticalAlignment="Top" Height="54" Click="two_Click"/>
+        <Button x:Name="three" Content="3" HorizontalAlignment="Left" Margin="469,176,0,327" Width="106" Click="three_Click" RenderTransformOrigin="1.812,0.294"/>
+        <Button x:Name="minus" Content="-" HorizontalAlignment="Left" Margin="74,411,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="minus_Click" IsEnabled="{Binding ElementName=texb, Path=Text.Length}" />
+        <Button x:Name="four" Content="4" HorizontalAlignment="Left" Margin="77,255,0,0" VerticalAlignment="Top" Width="99" Height="54" Click="four_Click" RenderTransformOrigin="-0.456,0.794">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-1.195"/>
+                    <RotateTransform Angle="0.756"/>
+                    <TranslateTransform Y="1.974"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="five" Content="5" HorizontalAlignment="Left" Margin="202,255,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="five_Click" RenderTransformOrigin="-0.427,0.191"/>
+        <Button x:Name="six" Content="6" HorizontalAlignment="Left" Margin="331,255,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="six_Click"/>
+        <Button x:Name="umnojenie" Content="*" HorizontalAlignment="Left" Margin="202,411,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="umnojenie_Click" IsEnabled="{Binding ElementName=texb, Path=Text.Length}" RenderTransformOrigin="0.92,2.435" />
+        <Button x:Name="seven" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Height="54" Click="seven_Click" Margin="469,255,0,0" RenderTransformOrigin="6.394,-2.179"/>
+        <Button x:Name="eight" Content="8" HorizontalAlignment="Left" Margin="74,338,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="eight_Click" RenderTransformOrigin="0.24,1.581"/>
+        <Button x:Name="nine" Content="9" HorizontalAlignment="Left" Margin="202,338,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="nine_Click"/>
+        <Button x:Name="delenie" Content="/" HorizontalAlignment="Left" Margin="331,411,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="delenie_Click" IsEnabled="{Binding ElementName=texb, Path=Text.Length}"/>
+        <Button x:Name="one" Content="1" HorizontalAlignment="Left" Margin="202,176,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="one_Click" RenderTransformOrigin="4.092,3.108"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="74,176,0,327" Width="106" Click="Button_Click" RenderTransformOrigin="0.276,-2.646"/>
+        <Button x:Name="point" Content="," HorizontalAlignment="Left" Margin="331,338,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="point_Click" IsEnabled="{Binding ElementName=texb, Path=Text.Length}"    />
+        <Button x:Name="plus" Content="+" HorizontalAlignment="Left" Margin="469,338,0,0" VerticalAlignment="Top" Width="106" Height="54" Click="plus_Click" IsEnabled="{Binding ElementName=texb, Path=Text.Length}" RenderTransformOrigin="-0.538,0.668" />
+        <Button x:Name="ravno" Content="=" HorizontalAlignment="Left" Margin="469,411,0,0" VerticalAlignment="Top" Width="108" Height="54" RenderTransformOrigin="0.234,0.67" Click="ravno_Click" IsEnabled="{Binding ElementName=texb, Path=Text.Length}" />
+        <Button x:Name="CE" Content="CE" HorizontalAlignment="Left" Margin="331,100,0,0" VerticalAlignment="Top" Width="244" Height="58" Click="CE_Click" IsEnabled="{Binding ElementName=texb, Path=Text.Length}" />
+        <Button x:Name="C" Content="C" HorizontalAlignment="Left" Margin="74,100,0,0" VerticalAlignment="Top" Width="234" Height="58" Click="C_Click" IsEnabled="{Binding ElementName=texb, Path=Text.Length}" />
+
+
+    </Grid>
+</Window>

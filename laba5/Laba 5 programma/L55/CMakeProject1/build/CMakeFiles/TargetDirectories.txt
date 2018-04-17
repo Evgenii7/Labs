@@ -1,0 +1,10 @@
+E:/Students/PKS-216/L55/CMakeProject1/build/CMakeFiles/CMakeProject1.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/CMakeFiles/INSTALL.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/CMakeFiles/ALL_BUILD.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/CMakeFiles/ZERO_CHECK.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/.cppan/cmake/.cppan/cmake_bdir/CMakeFiles/cppan-d-b.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/.cppan/cmake/.cppan/cmake_bdir/CMakeFiles/INSTALL.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/.cppan/cmake/.cppan/cmake_bdir/CMakeFiles/cppan-d-c.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/.cppan/cmake/.cppan/cmake_bdir/CMakeFiles/cppan-d-b-d.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/cppan/15bb1788/CMakeFiles/INSTALL.dir
+E:/Students/PKS-216/L55/CMakeProject1/build/cppan/8aec2ea3/CMakeFiles/INSTALL.dir

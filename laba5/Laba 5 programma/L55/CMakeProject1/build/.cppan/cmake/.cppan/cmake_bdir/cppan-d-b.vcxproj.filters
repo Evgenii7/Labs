@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Students\PKS-216\L55\CMakeProject1\build\CMakeFiles\a4fb6ee8019462135dffa298f6bc2575\cppan-d-b.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Students\PKS-216\L55\CMakeProject1\build\.cppan\cmake\.cppan\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\Students\PKS-216\L55\CMakeProject1\build\.cppan\cmake\.cppan\cmake_bdir\CMakeFiles\cppan-d-b" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{93856AD1-1D81-363A-9ABB-43AE329CD5D2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

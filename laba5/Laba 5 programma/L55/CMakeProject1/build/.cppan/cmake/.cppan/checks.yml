@@ -1,0 +1,243 @@
+check_function_exists:
+    -   aligned_alloc
+    -   CC_SHA256_Init
+    -   clock_gettime
+    -   floor
+    -   fork
+    -   fseeko
+    -   futimens
+    -   futimes
+    -   futimesat
+    -   getopt
+    -   isascii
+    -   lfind
+    -   memalign
+    -   memcmp
+    -   memmove
+    -   memset
+    -   mmap
+    -   open
+    -   posix_fadvise
+    -   posix_memalign
+    -   pow
+    -   pthread_condattr_setclock
+    -   realloc
+    -   select
+    -   setlocale
+    -   setmode
+    -   SHA256Init
+    -   SHA256_Init
+    -   sqrt
+    -   strcasecmp
+    -   strchr
+    -   strdup
+    -   strerror
+    -   strncasecmp
+    -   strptime
+    -   strrchr
+    -   strsignal
+    -   strstr
+    -   strtol
+    -   strtoull
+    -   uselocale
+    -   utime
+    -   utimes
+    -   vasprintf
+    -   vfork
+    -   vprintf
+    -   vsnprintf
+    -   vsyslog
+    -   _aligned_malloc
+    -   _snprintf
+    -   _stricmp
+    -   _strnicmp
+
+check_include_exists:
+    -   file: assert.h
+        variable: HAVE_ASSERT_H
+        cpp: false
+    -   file: byteswap.h
+        variable: HAVE_BYTESWAP_H
+        cpp: false
+    -   file: CommonCrypto/CommonDigest.h
+        variable: HAVE_COMMONCRYPTO_COMMONDIGEST_H
+        cpp: false
+    -   file: dlfcn.h
+        variable: HAVE_DLFCN_H
+        cpp: false
+    -   file: endian.h
+        variable: HAVE_ENDIAN_H
+        cpp: false
+    -   file: fcntl.h
+        variable: HAVE_FCNTL_H
+        cpp: false
+    -   file: immintrin.h
+        variable: HAVE_IMMINTRIN_H
+        cpp: false
+    -   file: inttypes.h
+        variable: HAVE_INTTYPES_H
+        cpp: false
+    -   file: io.h
+        variable: HAVE_IO_H
+        cpp: false
+    -   file: langinfo.h
+        variable: HAVE_LANGINFO_H
+        cpp: false
+    -   file: limits.h
+        variable: HAVE_LIMITS_H
+        cpp: false
+    -   file: locale.h
+        variable: HAVE_LOCALE_H
+        cpp: false
+    -   file: malloc.h
+        variable: HAVE_MALLOC_H
+        cpp: false
+    -   file: memory.h
+        variable: HAVE_MEMORY_H
+        cpp: false
+    -   file: minix/sha2.h
+        variable: HAVE_MINIX_SHA2_H
+        cpp: false
+    -   file: rpc.h
+        variable: HAVE_RPC_H
+        cpp: false
+    -   file: search.h
+        variable: HAVE_SEARCH_H
+        cpp: false
+    -   file: sha256.h
+        variable: HAVE_SHA256_H
+        cpp: false
+    -   file: sha2.h
+        variable: HAVE_SHA2_H
+        cpp: false
+    -   file: stdarg.h
+        variable: HAVE_STDARG_H
+        cpp: false
+    -   file: stdbool.h
+        variable: HAVE_STDBOOL_H
+        cpp: false
+    -   file: stddef.h
+        variable: HAVE_STDDEF_H
+        cpp: false
+    -   file: stdint.h
+        variable: HAVE_STDINT_H
+        cpp: false
+    -   file: stdlib.h
+        variable: HAVE_STDLIB_H
+        cpp: false
+    -   file: strings.h
+        variable: HAVE_STRINGS_H
+        cpp: false
+    -   file: string.h
+        variable: HAVE_STRING_H
+        cpp: false
+    -   file: syslog.h
+        variable: HAVE_SYSLOG_H
+        cpp: false
+    -   file: sys/cdefs.h
+        variable: HAVE_SYS_CDEFS_H
+        cpp: false
+    -   file: sys/stat.h
+        variable: HAVE_SYS_STAT_H
+        cpp: false
+    -   file: sys/time.h
+        variable: HAVE_SYS_TIME_H
+        cpp: false
+    -   file: sys/types.h
+        variable: HAVE_SYS_TYPES_H
+        cpp: false
+    -   file: sys/wait.h
+        variable: HAVE_SYS_WAIT_H
+        cpp: false
+    -   file: unistd.h
+        variable: HAVE_UNISTD_H
+        cpp: false
+    -   file: vfork.h
+        variable: HAVE_VFORK_H
+        cpp: false
+    -   file: winsock.h
+        variable: HAVE_WINSOCK_H
+        cpp: false
+    -   file: xlocale.h
+        variable: HAVE_XLOCALE_H
+        cpp: false
+    -   file: inttypes.h
+        variable: JSON_C_HAVE_INTTYPES_H
+        cpp: false
+
+check_type_size:
+    -   type: CC_SHA256_CTX
+    -   type: int
+    -   type: int16
+    -   type: int32
+    -   type: int32_t
+    -   type: int64_t
+    -   type: int8
+    -   type: long
+    -   type: long long
+    -   type: ptrdiff_t
+    -   type: SHA256_CTX
+    -   type: SHA2_CTX
+    -   type: signed int
+    -   type: signed long
+    -   type: signed long long
+    -   type: signed short
+    -   type: uint16_t
+    -   type: uint32_t
+    -   type: uint64_t
+    -   type: uint8_t
+    -   type: uintptr_t
+    -   type: unsigned char *
+    -   type: unsigned int
+    -   type: unsigned long
+    -   type: unsigned long long
+    -   type: unsigned short
+    -   type: _Bool
+
+check_symbol_exists:
+    -   symbol: memmove
+        headers:
+            -   string.h
+    -   symbol: snprintf
+        headers:
+            -   stdio.h
+
+check_decl_exists:
+    -   decl: CLOCK_MONOTONIC
+    -   decl: decl
+        headers:
+            -   INFINITY
+    -   decl: decl
+        headers:
+            -   _finite
+    -   decl: decl
+        headers:
+            -   _isnan
+    -   decl: decl
+        headers:
+            -   isinf
+    -   decl: decl
+        headers:
+            -   isnan
+    -   decl: decl
+        headers:
+            -   nan
+    -   decl: _mm_movemask_epi8
+
+checks:
+    HAVE_STRUCT_STAT_ST_ATIMENSEC:
+        text: CHECK_STRUCT_HAS_MEMBER("struct stat" st_atimensec "sys/stat.h" HAVE_STRUCT_STAT_ST_ATIMENSEC)
+        invert: false
+    HAVE_STRUCT_STAT_ST_ATIMESPEC_TV_NSEC:
+        text: CHECK_STRUCT_HAS_MEMBER("struct stat" st_atimespec.tv_nsec "sys/stat.h" HAVE_STRUCT_STAT_ST_ATIMESPEC_TV_NSEC)
+        invert: false
+    HAVE_STRUCT_STAT_ST_ATIM_ST__TIM_TV_NSEC:
+        text: CHECK_STRUCT_HAS_MEMBER("struct stat" st_atim.st__tim.tv_nsec "sys/stat.h" HAVE_STRUCT_STAT_ST_ATIM_ST__TIM_TV_NSEC)
+        invert: false
+    HAVE_STRUCT_STAT_ST_ATIM_TV_NSEC:
+        text: CHECK_STRUCT_HAS_MEMBER("struct stat" st_atim.tv_nsec "sys/stat.h" HAVE_STRUCT_STAT_ST_ATIM_TV_NSEC)
+        invert: false
+    HAVE_STRUCT_STAT_ST_UATIME:
+        text: CHECK_STRUCT_HAS_MEMBER("struct stat" st_uatime "sys/stat.h" HAVE_STRUCT_STAT_ST_UATIME)
+        invert: false
+

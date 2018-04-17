@@ -1,0 +1,1 @@
+windows-amd64-msvc-19.13-32-x86-dll-10.0.16299-visual_studio_15_2017

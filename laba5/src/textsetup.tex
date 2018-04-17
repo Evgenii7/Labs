@@ -1,0 +1,17 @@
+% Set up titles, tables, pictures
+\titleformat{name=\chapter}[hang]
+  {\bfseries\Large}{\thechapter\quad}{1ex}{\filright}
+\titlespacing*{\chapter}{0pt}{0pt}{21pt}
+
+\titleformat{name=\chapter,numberless}[hang]
+  {\bfseries\Large}{}{0ex}{\filright}
+\titlespacing*{name=\chapter,numberless}{0pt}{0pt}{21pt}
+
+\titleformat*{\section}{\large\bfseries}
+
+\captionsetup[table]{singlelinecheck=false,justification=raggedright} % Left-align table captions
+
+\renewcommand{\thefigure}{\arabic{figure}} % Numeration of figures
+\setlist{nolistsep} % No vspaces between items in lists
+
+\sloppy % Do not overfill text line

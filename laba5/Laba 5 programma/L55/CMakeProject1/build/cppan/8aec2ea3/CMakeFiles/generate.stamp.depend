@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/cppan/storage/src/8a/ec/2ea3/CMakeLists.txt
+C:/cppan/storage/etc/static/header.cmake
+C:/cppan/storage/etc/static/export.cmake
+C:/Program Files/CMake/share/cmake-3.11/Modules/CheckCXXSourceCompiles.cmake

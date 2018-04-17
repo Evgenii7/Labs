@@ -1,0 +1,68 @@
+\documentclass[russian,utf8,emptystyle,reduceheight=5mm]{eskdtext}
+
+% packages
+%
+% Тестовое наполнение текстом
+% При написании работы - удалить пакет и комманды \lipsum
+\usepackage{lipsum}
+%
+\usepackage{eskdplain}
+\usepackage{graphicx}
+\usepackage{datetime}
+\usepackage{enumitem} % for lists
+\usepackage{ulem} % for underlining
+\usepackage{lastpage} % Number of pages
+\usepackage{hyperref} % Links in pdf
+
+% setup
+\newcommand{\FrontPageDepartment}{ЭМ} %Факультет
+\newcommand{\FrontPageSubdepartment}{Менеджмента} %Кафедра
+\newcommand{\WorkType}{Контрольная работа} %Тип работы (заголовок)
+\newcommand{\Subject}{Предмет} %по ... родительный падеж
+\newcommand{\Topic}{Тема контрольной работы} %Тема
+\newcommand{\Professor}{Иванов~И.~И.} %Руководитель
+\newcommand{\Student}{Петров~П.~П.} %Студент
+\newcommand{\Group}{ИСм-112} %Группа
+\newcommand{\FrontPageDate}{\ddmmyyyydate\today} %Дата
+
+\ESKDsignature{МИВУ 230400.68 ПЗ} % Код специальности и тип работы
+
+% eskdx setup
+\ESKDletter{}{У}{}
+\ESKDtitle{\Topic}
+\ESKDchecker{\Professor}
+\ESKDauthor{\Student}
+\ESKDcolumnIX{МИ ВлГУ\\ \Group}
+
+\addto\captionsrussian{\def\refname{Список использованных источников}}
+\sloppy % split long lines
+
+\input{src/setup.tex}
+\input{src/pagesetup.tex}
+
+% main document
+\begin{document}
+% Титул
+\ESKDthisStyle{empty}
+\setlength{\topskip}{15pt}
+\input{src/frontpage.tex}
+\setlength{\topskip}{0pt}
+\newpage
+
+% Аннотация
+\ESKDthisStyle{empty}
+\input{src/annotation.tex}
+\newpage
+
+% Содержание
+\setcounter{page}{4}
+\tableofcontents
+\newpage
+
+% Основной текст
+\input{src/text.tex}
+\newpage
+
+% Список литературы
+\input{src/bibliography.tex}
+\end{document}

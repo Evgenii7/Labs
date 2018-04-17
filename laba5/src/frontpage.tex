@@ -1,0 +1,96 @@
+\newlength{\frontpagefk} % Ширина поля Факультет/Кафедра
+\setlength{\frontpagefk}{6cm}
+\newlength{\frontpagerb} % Ширина надписей Руководитель/Студент и пр. под темой
+\setlength{\frontpagerb}{6cm}
+\newlength{\frontpagerbspace} % ??? (do not remove)
+\setlength{\frontpagerbspace}{1cm}
+\newlength{\FrontPageSubjSpace} % Ширина пробела до и после названия предмета
+\setlength{\FrontPageSubjSpace}{1cm}
+\newlength{\FrontPageTopicSpace} % Ширина пробела до и после темы
+\setlength{\FrontPageTopicSpace}{0.5cm}
+
+\thispagestyle{empty}
+\begin{center}
+{
+\vspace*{-1.5cm}
+\baselineskip=1.3em
+{\small Министерство образования и науки Российской Федерации}\\
+\textbf{Муромский институт (филиал)}\\
+{\footnotesize федерального государственного бюджетного образовательного учреждения\\
+высшего профессионального образования}\\
+\textbf{<<Владимирский государственный университет\\
+имени Александра Григорьевича и Николая Григорьевича\\
+Столетовых>>\\
+(МИ (филиал) ВлГУ)\\}
+}
+
+\bigskip
+\begin{tabular}{l c}
+\textbf{Факультет}&\underline{\makebox[\frontpagefk]{\FrontPageDepartment}}\\
+\textbf{Кафедра}&\underline{\makebox[\frontpagefk]{\FrontPageSubdepartment}}\\
+\end{tabular}
+
+\vspace{\fill}
+\begin{Huge}
+\textbf{\textsl{\WorkType}}
+\end{Huge}
+
+\vspace{\fill}
+по \underline{\makebox[\FrontPageSubjSpace]{}\Subject\makebox[\FrontPageSubjSpace]{}}
+
+\smallskip
+\parbox{15cm}{\centering{Тема: \uline{\makebox[\FrontPageTopicSpace]{}\Topic\makebox[\FrontPageTopicSpace]{}}}}
+
+\vspace{\fill}
+
+\begin{flushright}
+\makebox[\frontpagerb][c]{
+\makebox[\frontpagerb][l]{Руководитель}\hspace{\frontpagerbspace}}
+
+\smallskip
+\makebox[\frontpagerb][c]{
+\raisebox{-\baselineskip}{\shortstack{\underline{\makebox[\frontpagerb][l]{\Professor}}\\
+\begin{footnotesize}
+(фамилия, инициалы)
+\end{footnotesize}}}\hspace{\frontpagerbspace}}
+
+\bigskip
+\makebox[\frontpagerb][c]{
+\raisebox{-\baselineskip}{\shortstack{\underline{\makebox[\frontpagerb][l]{}}\\
+\begin{footnotesize}
+(подпись)\hfill(дата)
+\end{footnotesize}}}\hspace{\frontpagerbspace}}
+
+\newcommand{\frontpagerbstudent}[2]{ %
+\makebox[\frontpagerb]{ %
+\raisebox{-\baselineskip}{\shortstack{#1\ \underline{\makebox[\frontpagerb-\widthof{#1\ }][c]{#2}}\\
+\begin{footnotesize}
+\makebox[\widthof{#1\ }][c]{}\makebox[\frontpagerb-\widthof{#1\ }][c]{(группа)}
+\end{footnotesize}}}\hspace{\frontpagerbspace}}
+}
+
+\bigskip
+\makebox[\frontpagerb][c]{\frontpagerbstudent{Студент}{\Group}}
+
+\smallskip
+\makebox[\frontpagerb][c]{
+\raisebox{-\baselineskip}{\shortstack{\underline{\makebox[\frontpagerb][l]{\Student}}\\
+\begin{footnotesize}
+(фамилия, инициалы)
+\end{footnotesize}}}\hspace{\frontpagerbspace}}
+
+\renewcommand{\dateseparator}{.}
+
+\bigskip
+\makebox[\frontpagerb][c]{
+\raisebox{-\baselineskip}{\shortstack{\underline{\makebox[\frontpagerb][r]{\FrontPageDate}}\\
+\begin{footnotesize}
+(подпись)\hfill(дата)
+\end{footnotesize}}}\hspace{\frontpagerbspace}}
+
+\end{flushright}
+
+\vspace{\fill}
+Муром \the\year
+\vspace*{-1cm}
+\end{center}

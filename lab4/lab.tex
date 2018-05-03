@@ -1,0 +1,57 @@
+% !TeX program = pdflatex
+\documentclass[russian,utf8,simple]{eskdtext}
+
+% packages
+%
+% Тестовое наполнение текстом
+% При написании работы - удалить пакет и комманды \lipsum
+\usepackage{lipsum}
+%
+\usepackage{graphicx}
+\usepackage{datetime}
+\usepackage{enumitem} % for lists
+\usepackage{ulem} % for underlining
+\usepackage{lastpage} % Number of pages
+\usepackage{hyperref} % Links in pdf
+
+% setup
+\newcommand{\FrontPageDepartment}{ИТ} %Факультет
+\newcommand{\FrontPageSubdepartment}{САПР} %Кафедра
+\newcommand{\WorkType}{Лабораторная работа №4} %Тип работы (заголовок)
+\newcommand{\Subject}{Инструментальные средства разработки программного обеспечения} %по ... родительный падеж
+\newcommand{\Topic}{Разработка приложения на языке Python с использованием QtQML} %Тема
+\newcommand{\Professor}{Пугин~Е.~В.} %Руководитель
+\newcommand{\Student}{Шипин~Е.~С.} %Студент
+\newcommand{\Group}{ПКС-216} %Группа
+\newcommand{\FrontPageDate}{\ddmmyyyydate\today} %Дата
+
+\ESKDsignature{МИВУ 09.02.03} % Код специальности и тип работы
+
+% eskdx setup
+\ESKDletter{}{У}{}
+\ESKDtitle{\WorkType
+
+\Topic}
+\ESKDchecker{\Professor}
+\ESKDauthor{\Student}
+\ESKDcolumnIX{МИ ВлГУ\\ \Group}
+
+\addto\captionsrussian{\def\refname{Список использованных источников}}
+\sloppy % split long lines
+
+\input{src/setup.tex}
+
+% main document
+\begin{document}
+% Титул
+\ESKDthisStyle{title}
+\input{src/frontpage.tex}
+\newpage
+
+
+
+% Основной текст
+\ESKDthisStyle{formII}
+\input{src/text.tex}
+\newpage
+\end{document}
